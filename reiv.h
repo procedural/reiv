@@ -5,3 +5,4 @@ void reivMesh(unsigned meshIndex, unsigned trianglesFirst, unsigned trianglesCou
 void reivPipeline(unsigned pipelineIndex, const void * state);
 void reivVariables(unsigned variablesCount, const float4 * variables);
 void reivDraw(unsigned meshIndex, unsigned pipelineIndex, unsigned instancesCount);
+void reivReadback(unsigned x, unsigned y, unsigned w, unsigned h, unsigned char * outRgba);
