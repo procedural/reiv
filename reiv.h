@@ -1,6 +1,6 @@
 #pragma once
 
-void reivScreen(unsigned x, unsigned y, unsigned w, unsigned h, const void * displayOrHinstance, const void * windowOrHwnd);
+void reivWindow(unsigned w, unsigned h, const void * displayOrHinstance, const void * windowOrHwnd);
 void reivPixels(unsigned pixelsIndex, unsigned wh, const unsigned char * rgba);
 void reivMesh(unsigned meshIndex, unsigned trianglesFirst, unsigned trianglesCount, const float4 * triplet0, const float4 * triplet1, const float4 * triplet2, const float4 * triplet3);
 void reivPipeline(unsigned pipelineIndex, const void * state);
