@@ -67,9 +67,7 @@ typedef struct ReivBatchReadback {
 
 void reivMark(const char * group64Chars, const char * label64Chars);
 void reivWindow(unsigned w, unsigned h, const void * displayOrHinstance, const void * windowOrHwnd);
-void reivPixels(unsigned batchesCount, const ReivBatchPixels * batches);
-void reivMeshAos(unsigned batchesCount, const ReivBatchMeshAos * batches);
-void reivMeshSoa(unsigned batchesCount, const ReivBatchMeshSoa * batches);
+void reivResources(unsigned meshAosBatchesCount, const ReivBatchMeshAos * meshAosBatches, unsigned meshSoaBatchesCount, const ReivBatchMeshSoa * meshSoaBatches, unsigned pixelsBatchesCount, const ReivBatchPixels * pixelsBatches);
 void reivPipeline(unsigned batchesCount, const ReivBatchPipeline * batches);
 void reivVariables(unsigned variablesIndex, unsigned values32BitCount, const void * values32Bit);
 void reivDraw(unsigned batchesCount, const ReivBatchDraw * batches);
