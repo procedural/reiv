@@ -34,6 +34,7 @@ typedef struct ReivBatchPipeline {
 typedef struct ReivBatchDraw {
   unsigned meshIndex;
   unsigned pipelineIndex;
+  unsigned pixelsIndexes[4];
   unsigned instancesCount;
 } ReivBatchDraw;
 
