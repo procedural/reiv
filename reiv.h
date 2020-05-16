@@ -6,44 +6,24 @@ typedef struct ReivBatchPixels {
   unsigned y;
   unsigned w;
   unsigned h;
-  const unsigned char * rgbaFace0;
-  const unsigned char * rgbaFace1;
-  const unsigned char * rgbaFace2;
-  const unsigned char * rgbaFace3;
-  const unsigned char * rgbaFace4;
-  const unsigned char * rgbaFace5;
+  const unsigned char * rgba[6];
 } ReivBatchPixels;
 
 typedef struct ReivBatchMeshAos {
   unsigned meshIndex;
   unsigned vertexesFirst;
   unsigned vertexesCount;
-  const float4 * attribute0;
-  const float4 * attribute1;
-  const float4 * attribute2;
-  const float4 * attribute3;
+  const float * xyzw[4];
 } ReivBatchMeshAos;
 
 typedef struct ReivBatchMeshSoa {
   unsigned meshIndex;
   unsigned vertexesFirst;
   unsigned vertexesCount;
-  const float * attribute0x;
-  const float * attribute0y;
-  const float * attribute0z;
-  const float * attribute0w;
-  const float * attribute1x;
-  const float * attribute1y;
-  const float * attribute1z;
-  const float * attribute1w;
-  const float * attribute2x;
-  const float * attribute2y;
-  const float * attribute2z;
-  const float * attribute2w;
-  const float * attribute3x;
-  const float * attribute3y;
-  const float * attribute3z;
-  const float * attribute3w;
+  const float * x[4];
+  const float * y[4];
+  const float * z[4];
+  const float * w[4];
 } ReivBatchMeshSoa;
 
 typedef struct ReivBatchPipeline {
