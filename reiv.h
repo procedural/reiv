@@ -32,9 +32,9 @@ typedef struct ReivBatchPipeline {
 } ReivBatchPipeline;
 
 typedef struct ReivBatchDraw {
-  unsigned variablesIndex;
-  unsigned variables32BitValuesCount;
-  const void * variables32BitValues;
+  unsigned registerIndex;
+  unsigned register32BitValuesCount;
+  const void * register32BitValues;
   unsigned meshIndex;
   unsigned pipelineIndex;
   unsigned pixelsIndexes[4];
