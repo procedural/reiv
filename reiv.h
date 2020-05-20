@@ -6,6 +6,8 @@ typedef struct ReivBatchPixels {
   unsigned y;
   unsigned w;
   unsigned h;
+  unsigned level;
+  unsigned allocateLevelsCount;
   const unsigned char * rgba[6];
 } ReivBatchPixels;
 
